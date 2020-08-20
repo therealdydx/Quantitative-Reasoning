@@ -79,8 +79,19 @@ for (i in 1:6) {
 
 df
 
+# you can try looking at the visualization
+barplot(table(x[x$Admitted == "Yes", ]$Sex, x[x$Admitted == "Yes", ]$Department)/table(x$Sex, x$Department), beside = TRUE, legend = TRUE)
+barplot(table(x$Sex, x$Department), legend = TRUE, main = "Applications by sex and department")
+
+
 # based on the results of the dataframe, it is clear that mathematics
 # is the faculty with a very strong gender imbalance
+
+# THERE IS A SIMPLER WAY OF DOING IT
+
+# filter out the table into admitted students, then divide
+# divide admitted students filtered by gender and dpt / whole table filtered by gender and dpt
+# then you get percentage admitted students by each gender and dpt
 
 #__________________________________________________
 
