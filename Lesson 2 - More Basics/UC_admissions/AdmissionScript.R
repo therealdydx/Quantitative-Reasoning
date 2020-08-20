@@ -14,12 +14,15 @@ acceptance_male_number
 acceptance_total <- sum(x$Sex == "F" | x$Sex == "M", na.rm = TRUE)
 acceptance_total
 
+# now find the overall percentage rate of males
 percentage_male <- acceptance_male_number / acceptance_total * 100
 percentage_male
 
+# calculate the total number of females that have been accepted
 acceptance_female_number <- sum(x$Sex == "F" & x$Admitted == "Yes", na.rm = TRUE)
 acceptance_female_number
 
+# now find the overall percentage rate of females
 percentage_female <- acceptance_female_number / acceptance_total * 100
 percentage_female
 
