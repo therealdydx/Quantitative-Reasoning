@@ -59,3 +59,26 @@ IQR(uesi$income_mean, na.rm = TRUE)
 # (C) WHAT IS THE STANDARD DEVIATION OF ALL CITIES' INCOME?
 
 sd(uesi$income_mean, na.rm = TRUE)
+
+#______________________________________________________________
+
+# QUESTION 6: HOW MANY CITIES GET PERFECT SCORES OF 100 ON ALL OF THE 3 VARIABLES
+
+table(uesi$PM25.UESI == 100 & uesi$TREECAP.UESI == 100 & uesi$UHI.UESI == 100)
+
+#______________________________________________________________
+
+# QUESTION 7: HOW MANY CITIES ARE BETTER THAN SINGAPORE WITH RESPECT TO TREECOVER PER CAPITA
+
+table(uesi$PM25.UESI == 100 & uesi$UHI.UESI == 100 & uesi$TREECAP.UESI == 100)
+
+# (B) HOW MANY CITIES ARE BETTER THAN SINGAPORE WITH RESPECT TO BOTH TREE COVER AND PM2.5
+
+sum(uesi$TREECAP.UESI > uesi$TREECAP.UESI[uesi$city == "Singapore"] & uesi$PM25.UESI > uesi$PM25.UESI[uesi$city == "Singapore"])
+
+# (C) HOW MANY CITIES ARE BETTER THAN SINGAPORE WITH RESPECT TO EITHER TREECOVER PER CAPITA OR PM2.5
+
+sum(uesi$TREECAP.UESI > uesi$TREECAP.UESI[uesi$city == "Singapore"] | uesi$PM25.UESI > uesi$PM25.UESI[uesi$city == "Singapore"], na.rm = TRUE)
+
+
+
