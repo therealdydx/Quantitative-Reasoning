@@ -32,7 +32,7 @@ print(number_cities)
 
 # QUESTION 3: WHICH CITIES HAVE SCORES ABOVE 85 ON BOTH PUBTRANS.UESI AND TREECAP.UESI
 
-number_cities_v2 <- sum(uesi$PUBTRANS.UESI > 85 & uesi$TREECAP.UESI > 85, na.rm = TRUE)
+number_cities_v2 <- uesi$city[which(uesi$PUBTRANS.UESI > 85 & uesi$TREECAP.UESI > 85)]
 print(number_cities_v2)
 
 #______________________________________________________________
