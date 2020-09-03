@@ -16,6 +16,13 @@ max(x$Delhi)
 mean(x$Delhi)
 median(x$Delhi)
 sd(x$Delhi)
+IQR(x$Delhi)
+
+# Find the quantile of the city
+quantile(x$Delhi, probs = c(0.05, 0.95))
+
+# Find the sum of the city
+sum(is.na(x$Delhi))
 
 #----------------------------------------------------------------------------
 # QUESTION 2
@@ -45,10 +52,28 @@ boxplot(x$Delhi, main = "Delhi PM2.5 Measurements",
 hist(x$Delhi, main = "Delhi PM2.5 Measurements",
      xlab = "Delhi", ylab = "PM2.5")
 
-#----------------------------------------------------------------------------
+#---------------------------------------------------------------------------
 # QUESTION 5
 
-# Are any of Delhi’s PM2.5 measurements below 0? 
-# In theory, the measurement should not contain any negative value.
+# calculate the mean of the PM2.5/Hour for all of the cities
 
-min(x$Delhi) #minimum is not below 0
+Delhi_hour <- aggregate(x$Delhi ~ x$hour, FUN = mean)
+Chennai_hour <- aggregate(x$Chennai ~ x$hour, FUN = mean)
+
+# Explore the time series of measurements for your city.
+
+range(Delhi_hour$Delhi, na.rm = TRUE)
+
+# These are for the other cities
+
+# range(Hyderabad_hour$Hyderabad, na.rm = TRUE)
+# range(Kolkata_hour$Kolkata, na.rm = TRUE)
+
+#----------------------------------------------------------------------------
+# QUESTION 6
+
+# Use the boxplot to gauge the distribution for each hour.
+# What is the pattern for the city. 
+# What are the most important data presented in this plot?
+boxplot(x$Delhi ~ x$hour, main = "Distribution for each hour")
+grid()
