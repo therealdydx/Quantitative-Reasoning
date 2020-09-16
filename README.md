@@ -5,7 +5,7 @@ Assignments and projects for the module: Quantitative Reasoning, at Yale-NUS. As
 # If....
 
 ## You are a student
-Contact me if you see any errors here
+Contact me if you see any errors here, thanks.
 
 ## You are NOT a student (be it peers or others O.O)
 Please feel free to browse through this schoolwork repository and drop me a message as always if you found it interesting.
