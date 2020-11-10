@@ -5,7 +5,10 @@ R Formulas for Quantitative Reasoning
 ### Contents
 
 1. [Types of Graphs](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#types-of-graphs) 
-2. 
+2. [Linear Regression](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#linear-regression) 
+3. [Permutations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#permutations) 
+4. [Basic Functions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#basic-functions) 
+5. [Correlations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#correlations) 
 
 ### Types of Graphs
 
@@ -16,91 +19,79 @@ R Formulas for Quantitative Reasoning
 
 ##### BARPLOTS
 
-- barplot(dataset,
+- barplot(dataset, legend = TRUE, col = "lightblue",
 
-  ​				legend = TRUE,
-
-  ​				args.legend = list(x = "topleft"),
-
-  ​				col = "lightblue",
-
-  ​				pch = "17" # Plotting Character,
-
-  ​				lwd = 3,
+  ​				lwd = 3, pch = "17" # Plotting Character,
 
   ​				args.legend = list(bty = "n" # Suppress Legend Box,
 
-  ​				x = "topleft",
+  ​												x = "topleft",
 
-  ​				ncol = 3)
-  ​				)
+  ​												ncol = 3)
+​				)
 
+##### HISTOGRAMS
 
---------- HISTOGRAMS ---------
-
-- hist(dataset,
-	xlim = c(),
+- hist(dataset, xlim = c(10, 20),
 	freq = FALSE,
 	breaks = c(seq(-0.5, 0.5, 0.01))
 	)
 
---------- STRAIGHT LINES ---------
+##### STRAIGHT LINES
 
 - abline(v = quantile(dataset, c(0.025, 0.975)),
-	col = "orange",
-	lwd = 2)
+	col = "orange", lwd = 2)
 
 In the case of abline,
 - abline(a = for the intercept of the line,
-	b = slope of the line,
-	h = y-value for the horizontal line,
-	v = x-value for the vertical line)
+				b = slope of the line,
+				h = y-value for the horizontal line,
+				v = x-value for the vertical line)
 
-
---------- LEGENDS ---------
+##### LEGENDS
 
 - legend("topleft / top / etc",
-	legend = c("Factor 1", 
-		"Factor 2"),
-	lty = 1, # Line Type
-	lwd = 2, # Line Width
-	col = c("orange", "blue"),
-	pch = 12 # Plotting Symbols)
+	legend = c("Factor 1", "Factor 2"),
+						lty = 1, # Line Type
+						lwd = 2, # Line Width
+						col = c("orange", "blue"),
+						pch = 12 # Plotting Symbols)
 
+##### SCATTER PLOTS
 
---------- SCATTER PLOTS ---------
-
-- plot(col1 ~ col2,
-	data = dataset,
-	main = "title",
-	xlab = "axis",
-	ylab = "axis")
-
+- plot(col1 ~ col2, data = dataset,
+			main = "title", xlab = "axis", ylab = "axis")
+	
 - grid()
 
 
---------------- LINEAR MODELS ---------------
 
+### LINEAR REGRESSION
 
---------- CORRELATIONS ---------
+##### CREATING A MODEL
+
+- model <- lm(col1 ~ col2, data = dataset)
+
+##### FINDING MODEL COEFFICIENTS
+
+- model$coefficients
+- coef(model)
+
+##### FINDING CORRELATION
 
 - cor(dataset$col1, dataset$col2,
-	use = "complete.obs")
+			use = "complete.obs")
 
 In this case, complete obs is used to filter NA values out
 
-
-- model$coefficients
-
-In this case, coefficients give the intercept and slope
-
-
-- coef(model)
+##### FINDING R-SQUARED
 
 Where the model inside is the linear model
 
 
 - summary(model)$r.squared
+
+##### PREDICTING NEW ADDITIONAL VALUES
 
 Where this finds the R Squared or the Variance accounted by the model
 
@@ -110,24 +101,27 @@ Where this finds the R Squared or the Variance accounted by the model
 Where model is linear model, new data is a dataframe
 
 
---------------- PERMUTATIONS ---------------
+
+
+
+### PERMUTATIONS
 
 - sample(x # elements, 
-	size = x_value, 
-	replace = TRUE/FALSE, 
-	prob = NULL)
+
+  ​			size = x_value,  replace = TRUE/FALSE,  prob = NULL)
 
 
---------------- BASIC FUNCTIONS ---------------
+
+### BASIC FUNCTIONS
 
 - any( )
-
 - which( )
-
 - table(val1, val2)
+- aggregate(data$col1, data$col2)
 
 
---------------- CORRELATIONS ---------------
+
+### CORRELATIONS
 
 1. Quantitative Variables Condition
 
