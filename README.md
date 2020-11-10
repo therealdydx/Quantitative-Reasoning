@@ -29,8 +29,8 @@ barplot(dataset, legend = TRUE, col = "lightblue",
 #### HISTOGRAMS
 
 - hist(dataset, xlim = c(10, 20),  
-	freq = FALSE,  
-	breaks = c(seq(-0.5, 0.5, 0.01))  
+	    freq = FALSE,  
+	    breaks = c(seq(-0.5, 0.5, 0.01))  
 	)
 
 #### CURVE LINES
