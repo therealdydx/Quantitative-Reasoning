@@ -33,9 +33,19 @@ barplot(dataset, legend = TRUE, col = "lightblue",
 #### HISTOGRAMS
 
 - hist(dataset, xlim = c(10, 20),
-	freq = FALSE,
-	breaks = c(seq(-0.5, 0.5, 0.01))
+	
+	​		freq = FALSE,
+	
+	​		breaks = c(seq(-0.5, 0.5, 0.01))
 	)
+
+#### CURVE LINES
+
+- curve(dnorm(x, mean = XY, sd = YX),
+
+  ​			add = TRUE,
+
+  ​			col = "red")
 
 #### STRAIGHT LINES
 
@@ -61,8 +71,15 @@ In the case of abline,
 
 - plot(col1 ~ col2, data = dataset,
 			main = "title", xlab = "axis", ylab = "axis")
-	
 - grid()
+
+#### BOXPLOTS
+
+- boxplot(column1 ~ column2, 
+
+  ​				data = x,
+
+  ​				ylab = "axis", xlab = "axis", main = "title")
 
 
 
@@ -90,6 +107,7 @@ Where the model inside is the linear model
 
 
 - summary(model)$r.squared
+- cor(dataset$column1, dataset$column2)^2
 
 #### PREDICTING NEW ADDITIONAL VALUES
 
@@ -102,9 +120,33 @@ Where model is linear model, new data is a dataframe
 
 
 
+# RESIDUALS AND RESIDUAL PLOTS
+
+- res <- residuals(model)
+
+#### FINDING MAXIMUM VALUE
+
+- data$column[which.max(res)]
+
+#### PLOT RESIDUALS
+
+- plot(model,
+
+  ​		which = 1,
+
+  ​		main = "e.g. Perceptions of Vaccine Effectiveness vs Safety",
+
+  ​		caption = "Residuals of log10 (% disagree that vaccines are effective)",
+
+  ​		sub.caption = "log10 (% disagree that vaccines are safe)"
+
+  ) 
+
+
+
 # PERMUTATIONS
 
-- sample(x # elements, 
+- sample(C("X", "Y"), 
 
   ​			size = x_value,  replace = TRUE/FALSE,  prob = NULL)
 
@@ -113,9 +155,20 @@ Where model is linear model, new data is a dataframe
 # BASIC FUNCTIONS
 
 - any( )
+
 - which( )
+
 - table(val1, val2)
-- aggregate(data$col1, data$col2)
+
+- aggregate(column1 ~ column2, data = x, FUN = formula)
+
+- max() and min()
+
+- mean() and sd()
+
+- head(), tail(), str(), dim(), unique()
+
+  
 
 
 
