@@ -13,10 +13,10 @@ R Formulas for Quantitative Reasoning
 # Types of Graphs
 
 #### SHRINK PLOTS
-'''
+```
 - par(mfrow = c(1,1))
 - par(mar = c(5, 2, 1.1, 0.1))
-'''
+```
 #### BARPLOTS
 
 barplot(dataset, legend = TRUE, col = "lightblue",  
