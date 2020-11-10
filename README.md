@@ -20,32 +20,24 @@ R Formulas for Quantitative Reasoning
 #### BARPLOTS
 
 barplot(dataset, legend = TRUE, col = "lightblue",
-
-​				lwd = 3, pch = "17" # Plotting Character,
-
-​				args.legend = list(bty = "n" # Suppress Legend Box,
-
-​												x = "topleft",
-
-​												ncol = 3)
-​				)
+	lwd = 3, pch = "17" # Plotting Character,
+	args.legend = list(bty = "n" # Suppress Legend Box,
+				x = "topleft",
+				ncol = 3)
+	)
 
 #### HISTOGRAMS
 
 - hist(dataset, xlim = c(10, 20),
-	
-	​		freq = FALSE,
-	
-	​		breaks = c(seq(-0.5, 0.5, 0.01))
+	freq = FALSE,
+	breaks = c(seq(-0.5, 0.5, 0.01))
 	)
 
 #### CURVE LINES
 
 - curve(dnorm(x, mean = XY, sd = YX),
-
-  ​			add = TRUE,
-
-  ​			col = "red")
+	add = TRUE,
+	col = "red")
 
 #### STRAIGHT LINES
 
@@ -62,10 +54,10 @@ In the case of abline,
 
 - legend("topleft / top / etc",
 	legend = c("Factor 1", "Factor 2"),
-						lty = 1, # Line Type
-						lwd = 2, # Line Width
-						col = c("orange", "blue"),
-						pch = 12 # Plotting Symbols)
+	lty = 1, # Line Type
+	lwd = 2, # Line Width
+	col = c("orange", "blue"),
+	pch = 12 # Plotting Symbols)
 
 #### SCATTER PLOTS
 
@@ -76,10 +68,8 @@ In the case of abline,
 #### BOXPLOTS
 
 - boxplot(column1 ~ column2, 
-
-  ​				data = x,
-
-  ​				ylab = "axis", xlab = "axis", main = "title")
+		data = x,
+		ylab = "axis", xlab = "axis", main = "title")
 
 
 
@@ -97,7 +87,7 @@ In the case of abline,
 #### FINDING CORRELATION
 
 - cor(dataset$col1, dataset$col2,
-			use = "complete.obs")
+		use = "complete.obs")
 
 In this case, complete obs is used to filter NA values out
 
@@ -105,14 +95,12 @@ In this case, complete obs is used to filter NA values out
 
 Where the model inside is the linear model
 
-
 - summary(model)$r.squared
 - cor(dataset$column1, dataset$column2)^2
 
 #### PREDICTING NEW ADDITIONAL VALUES
 
 Where this finds the R Squared or the Variance accounted by the model
-
 
 - predict(model, newdata = data.frame(col1 = val1))
 
@@ -131,14 +119,10 @@ Where model is linear model, new data is a dataframe
 #### PLOT RESIDUALS
 
 - plot(model,
-
-  ​		which = 1,
-
-  ​		main = "e.g. Perceptions of Vaccine Effectiveness vs Safety",
-
-  ​		caption = "Residuals of log10 (% disagree that vaccines are effective)",
-
-  ​		sub.caption = "log10 (% disagree that vaccines are safe)"
+	which = 1,
+	main = "e.g. Perceptions of Vaccine Effectiveness vs Safety",
+	caption = "Residuals of log10 (% disagree that vaccines are effective)",
+	sub.caption = "log10 (% disagree that vaccines are safe)"
 
   ) 
 
@@ -147,8 +131,7 @@ Where model is linear model, new data is a dataframe
 # PERMUTATIONS
 
 - sample(C("X", "Y"), 
-
-  ​			size = x_value,  replace = TRUE/FALSE,  prob = NULL)
+	size = x_value,  replace = TRUE/FALSE,  prob = NULL)
 
 
 
