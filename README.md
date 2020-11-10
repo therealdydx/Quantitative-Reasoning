@@ -81,6 +81,10 @@ boxplot(column1 ~ column2,
 		ylab = "axis", 
 		xlab = "axis", 
 		main = "title")
+		
+boxplot(column1 ~ column2 + column3,
+	data = x,
+	main = "title")
 ```
 
 
