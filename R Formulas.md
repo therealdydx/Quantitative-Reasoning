@@ -2,7 +2,10 @@
 
 R Formulas for Quantitative Reasoning
 
+### Contents
 
+1. [Types of Graphs](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#types-of-graphs) 
+2. 
 
 ### Types of Graphs
 
