@@ -161,6 +161,8 @@ sample(C("X", "Y"),
 - mean() and sd()
 
 - head(), tail(), str(), dim(), unique()
+
+- quantile(dataset, c(0.025, 0.975))
 ```
   
   
