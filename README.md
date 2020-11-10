@@ -18,14 +18,14 @@ R Formulas for Quantitative Reasoning
 - par(mar = c(5, 2, 1.1, 0.1))
 ```
 #### BARPLOTS
-
+```
 barplot(dataset, legend = TRUE, col = "lightblue",  
 	lwd = 3, pch = "17" # Plotting Character,  
 	args.legend = list(bty = "n" # Suppress Legend Box,  
 				x = "topleft",  
 				ncol = 3)
 	)
-
+```
 #### HISTOGRAMS
 
 - hist(dataset, xlim = c(10, 20),  
