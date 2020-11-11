@@ -8,7 +8,7 @@ R Formulas for Quantitative Reasoning
 2. [Linear Regression](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#linear-regression) 
 3. [Permutations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#permutations) 
 4. [Basic Functions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#basic-functions) 
-5. [Normal Distributions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#normal-distributions) 
+5. [Normal Distributions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#NORMAL-DISTRIBUTIONS) 
 6. [Correlations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#correlations) 
 
 # Types of Graphs
