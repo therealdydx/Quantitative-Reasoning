@@ -227,7 +227,8 @@ curve(dnorm(x, mean = XY, sd = YX),
 	add = TRUE, # Adding to the plot
 	from = value2,
 	to = value1,
-	col = "red")
+	col = "red",
+	lty = 2     # 2 is for dotted lines)
 ```
 #### FINDING STATISTICS
 
