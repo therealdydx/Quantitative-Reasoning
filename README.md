@@ -267,3 +267,11 @@ i.e. pnorm(0.45, mean = 2, sd = 0.1)
 3. No Outliers Condition
 
 4. Does the Plot Thicken Condition
+
+
+#### POSSIBLE REASONS FOR CORRELATION
+
+- Lurking Variables
+- Reverse Causality
+- Mutual Causality
+- Pure Randomness
