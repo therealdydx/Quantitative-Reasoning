@@ -80,6 +80,15 @@ plot(col1 ~ col2,
 
 grid()
 ```
+
+For line plots, changing type parameter will work i.e.
+```
+plot(Delhi_hour$Delhi, 
+     type="l", 
+     main="PM2.5 in Delhi", 
+     xlab="Hour", 
+     ylab="PM2.5")
+```
 #### BOXPLOTS
 ```
 boxplot(column1 ~ column2,   
