@@ -36,7 +36,8 @@ barplot(dataset,
 hist(dataset, 
 	xlim = c(10, 20),  
 	freq = FALSE,  
-	breaks = c(seq(-0.5, 0.5, 0.01))  
+	breaks = c(seq(-0.5, 0.5, 0.01),
+	labels = TRUE)  
 	)
 ```
 #### CURVE LINES
