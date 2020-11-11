@@ -89,6 +89,14 @@ plot(Delhi_hour$Delhi,
      xlab="Hour", 
      ylab="PM2.5")
 ```
+To plot extra points, you can use i.e.
+```
+points()
+```
+or for lines i.e.
+```
+lines(Chennai_hour$Chennai, col="red")
+```
 #### BOXPLOTS
 ```
 boxplot(column1 ~ column2,   
@@ -183,7 +191,7 @@ When 2 conditions are used in subsetting, which() is used
 ```
 In the case of aggregate, an aggregate function gets the populations by continent
 ```
-- max() and min()
+- max(), min(), range()
 
 - IQR(), mean(), sd(), median(), sum(x, na.rm = TRUE)
 
