@@ -238,6 +238,8 @@ In the case of aggregate, an aggregate function gets the populations by continen
 - nrow(), ncol(), colnames(), rownames()
 
 - quantile(dataset, c(0.025, 0.975))
+
+- rbind(), cbind()
 ```
 
 # NORMAL DISTRIBUTIONS
