@@ -30,7 +30,8 @@ barplot(dataset,
 	args.legend = list(bty = "n" # Suppress Legend Box,  
 				x = "topleft",  
 				ncol = 3,
-	names.arg = dataset$column)
+	names.arg = dataset$column,
+	las = 2 # Vertical labels or Horizontal)
 	)
 ```
 #### HISTOGRAMS
