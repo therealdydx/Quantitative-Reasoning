@@ -207,7 +207,7 @@ In the case of aggregate, an aggregate function gets the populations by continen
 
 - IQR(), mean(), sd(), median(), sum(x, na.rm = TRUE)
 
-- head(), tail(), str(), dim(), unique()
+- head(), tail(), str(), dim(), unique(), summary()
 
 - nrow(), ncol(), colnames(), rownames()
 
@@ -220,7 +220,21 @@ In the case of aggregate, an aggregate function gets the populations by continen
 ``` 
 qqnorm(h_min)
 qqline(h_min, col=2, lwd=2)
+```
+To plot normal distribution curve on a histogram as mentioned earlier
+```
+curve(dnorm(x, mean = XY, sd = YX),
+	add = TRUE, # Adding to the plot
+	from = value2,
+	to = value1,
+	col = "red")
+```
+#### FINDING STATISTICS
 
+To find proportion of a certain event falling below a certain probability, use pnorm
+```
+pnorm(x, mean, sd)
+i.e. pnorm(0.45, mean = 2, sd = 0.1)
 ```
   
 # CORRELATIONS
