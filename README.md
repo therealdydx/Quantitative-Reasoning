@@ -203,7 +203,13 @@ sample(C("X", "Y"),
 	replace = TRUE/FALSE,  
 	prob = c(0.25, 0.75))
 ```
-
+#### SETTING SEED
+i.e
+```
+set.seed(3)
+sim_fair_coin <- sample(outcomes, size = 100, replace = TRUE)
+table(sim_fair_coin)/length(sim_fair_coin)
+```
 
 # BASIC FUNCTIONS
 ```
