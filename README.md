@@ -27,7 +27,8 @@ barplot(dataset,
 	pch = "17" # Plotting Character,  
 	args.legend = list(bty = "n" # Suppress Legend Box,  
 				x = "topleft",  
-				ncol = 3)
+				ncol = 3,
+	names.arg = dataset$column)
 	)
 ```
 #### HISTOGRAMS
@@ -161,11 +162,15 @@ sample(C("X", "Y"),
 
 - aggregate(column1 ~ column2, data = x, FUN = formula)
 
+# In the case of aggregate, an aggregate function gets the populations by continent
+
 - max() and min()
 
-- mean() and sd()
+- mean(), sd(), median(), sum()
 
 - head(), tail(), str(), dim(), unique()
+
+- nrow(), ncol(), colnames(), rownames()
 
 - quantile(dataset, c(0.025, 0.975))
 ```
