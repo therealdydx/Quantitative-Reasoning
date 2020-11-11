@@ -257,7 +257,14 @@ To find proportion of a certain event falling below a certain probability, use p
 pnorm(x, mean, sd)
 i.e. pnorm(0.45, mean = 2, sd = 0.1)
 ```
+ 
+ #### GENERATE NORMAL VARIABLES
+ ```
+ w <- rnorm(100, mean = X, sd = Y)
+ ```
+ where 100 refers to the size of obs.
   
+ 
 # CORRELATIONS
 
 1. Quantitative Variables Condition
