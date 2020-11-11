@@ -101,6 +101,14 @@ or for lines i.e.
 ```
 lines(Chennai_hour$Chennai, col="red")
 ```
+To add text to the points, use i.e.
+```
+text(hept$dvvb_total, hept$pts_total, 
+	hept$lastname, 
+	pos = 1, 
+	cex=0.8)
+```
+
 #### BOXPLOTS
 ```
 boxplot(column1 ~ column2,   
