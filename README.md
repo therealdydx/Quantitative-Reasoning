@@ -2,7 +2,7 @@
 
 R Formulas for Quantitative Reasoning
 
-### Contents
+### CONTENTS
 
 1. [Types of Graphs](https://github.com/therealdydx/Quantitative-Reasoning#types-of-graphs) 
 2. [Linear Regression](https://github.com/therealdydx/Quantitative-Reasoning#linear-regression) 
@@ -11,7 +11,9 @@ R Formulas for Quantitative Reasoning
 5. [Normal Distributions](https://github.com/therealdydx/Quantitative-Reasoning#normal-distributions) 
 6. [Correlations](https://github.com/therealdydx/Quantitative-Reasoning#correlations) 
 
-# Types of Graphs
+# TYPES OF GRAPHS
+
+Parameters shown below are not exhaustive.
 
 #### SHRINK PLOTS
 ```
