@@ -159,17 +159,23 @@ sample(C("X", "Y"),
 ```
 - any( )
 
+- is.na()
+
 - which( )
+
+In the case of which, it is important to note that e.g.
+uesi$city[which(uesi$PUBTRANS.UESI > 85 & uesi$TREECAP.UESI > 85)]
+When 2 conditions are used in subsetting, which() is used
 
 - table(val1, val2)
 
 - aggregate(column1 ~ column2, data = x, FUN = formula)
 
-# In the case of aggregate, an aggregate function gets the populations by continent
+In the case of aggregate, an aggregate function gets the populations by continent
 
 - max() and min()
 
-- mean(), sd(), median(), sum()
+- IQR(), mean(), sd(), median(), sum(x, na.rm = TRUE)
 
 - head(), tail(), str(), dim(), unique()
 
