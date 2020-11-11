@@ -105,7 +105,14 @@ text(hept$dvvb_total, hept$pts_total,
 	pos = 1, 
 	cex=0.8)
 ```
-
+or
+```
+text(Y ~ X, 
+	labels=Country, 
+	data=Nobel, 
+	cex=0.8,
+	font=2)
+```
 #### BOXPLOTS
 ```
 boxplot(column1 ~ column2,   
@@ -137,6 +144,16 @@ cor(dataset$col1, dataset$col2,
 		use = "complete.obs")
 ```
 In this case, complete obs is used to filter NA values out
+
+To manually calculate correlation coefficients
+ManualCorCoef <- sum(Z-Score of X * Z-Score of Y) / (nrow(dataset) - 1)
+
+#### CALCULATING Z SCORES
+```
+meanX <- mean(val)
+sdX <- sd(val)
+Z-Score <- (val - meanX)/sdX
+```
 
 #### FINDING R-SQUARED
 
