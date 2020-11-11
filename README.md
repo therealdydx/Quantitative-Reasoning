@@ -61,10 +61,7 @@ abline(a = for the intercept of the line,
 				h = y-value for the horizontal line,  
 				v = x-value for the vertical line)
 ```
-Or using lowess lines, i.e.
-```
-lines(lowess(hept$pts_hurdles ~ hept$dvvb_hurdles))
-```
+
 #### LEGENDS
 ```
 legend("topleft / top / etc",  
@@ -156,6 +153,12 @@ predict(model, newdata = data.frame(col1 = val1))
 ```
 Where model is linear model, new data is a dataframe
 
+#### LOWESS LINES FOR SCATTER PLOTS
+
+Or using lowess lines, i.e.
+```
+lines(lowess(hept$pts_hurdles ~ hept$dvvb_hurdles))
+```
 
 # RESIDUALS AND RESIDUAL PLOTS
 ```
