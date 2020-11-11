@@ -4,12 +4,12 @@ R Formulas for Quantitative Reasoning
 
 ### Contents
 
-1. [Types of Graphs](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#types-of-graphs) 
-2. [Linear Regression](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#linear-regression) 
-3. [Permutations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#permutations) 
-4. [Basic Functions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#basic-functions) 
-5. [Normal Distributions](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#NORMAL-DISTRIBUTIONS) 
-6. [Correlations](https://github.com/therealdydx/Quantitative-Reasoning/blob/master/R%20Formulas.md#correlations) 
+1. [Types of Graphs](https://github.com/therealdydx/Quantitative-Reasoning#types-of-graphs) 
+2. [Linear Regression](https://github.com/therealdydx/Quantitative-Reasoning#linear-regression) 
+3. [Permutations](https://github.com/therealdydx/Quantitative-Reasoning#permutations) 
+4. [Basic Functions](https://github.com/therealdydx/Quantitative-Reasoning#basic-functions) 
+5. [Normal Distributions](https://github.com/therealdydx/Quantitative-Reasoning#normal-distributions) 
+6. [Correlations](https://github.com/therealdydx/Quantitative-Reasoning#correlations) 
 
 # Types of Graphs
 
