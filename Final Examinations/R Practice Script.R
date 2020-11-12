@@ -69,10 +69,34 @@ plot(model,
 
 # Q6. REPEAT THIS FOR ONLY MARKETS IN THE SOUTH
 
+south <- advert[advert$AREA == "S", ]
+head(south)
+
+plot(SALES ~ MEDAGE,
+     data = south, 
+     main = "Biscuit Sales Against Age")
+
+model <- lm(SALES ~ MEDAGE, data = south)
+abline(model, col = "red")
+
+plot(model, 
+     which = 1,
+     main = "Residuals of Biscuit Sales Against Age")
+
 #___________________________________________________
 
 # Q7. IS THERE A SIGNIFICANT DIFFERENCE IN INCOME BETWEEN NORTH AND SOUTH
 
+head(south)
+
+north <- advert[advert$AREA == "N", ]
+head(north)
+
+hist(MHI, 
+     data = north)
+
+hist(MHI,
+     data = south)
 
 #___________________________________________________
 
