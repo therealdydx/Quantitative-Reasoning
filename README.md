@@ -273,16 +273,17 @@ i.e. pnorm(0.45, mean = 2, sd = 0.1)
  where 100 refers to the size of obs.
   
  
-# CORRELATIONS
+# CORRELATIONS / OTHER INFORMATION
 
-1. Quantitative Variables Condition
+1. Quantitative Variables Condition -> Need Quantitative Variables
 
-2. Straight Enough Condition
+2. Straight Enough Condition -> The scatterplot needs to be reasonably straight
 
-3. No Outliers Condition
+3. No Outliers Condition -> Does the scatterplot have outliers
 
-4. Does the Plot Thicken Condition
+#### ANALYZING RESIDUALS
 
+1. Equal Variance Assumption -> Does the plot thicken?
 
 #### POSSIBLE REASONS FOR CORRELATION
 
@@ -290,3 +291,14 @@ i.e. pnorm(0.45, mean = 2, sd = 0.1)
 - Reverse Causality
 - Mutual Causality
 - Pure Randomness
+
+#### TRANSFORMATIONS
+
+- log -> Measurements that cannot be negative (need to add a constant to all values or cancel values that are 0)
+- sqrt -> For values that are exponentially bigger
+- square -> Distributions that are skewed to the left
+
+#### SAMPLING
+
+- Stratified Sampling
+- Cluster and Multistage Sampling
