@@ -91,7 +91,7 @@ abline(model, col = "red", lwd = 2)
 
 hist(residuals(model))
 
-plot(model, 
+plot(model,
      which = 1,
      main = "BISCUIT SALES AGAINST AGE",
      caption = "Residuals of Biscuit Sales Against Age")
@@ -127,13 +127,13 @@ south <- advert[advert$AREA == "S", ]
 head(south)
 
 plot(SALES ~ MEDAGE,
-     data = south, 
+     data = south,
      main = "Biscuit Sales Against Age")
 
 model <- lm(SALES ~ MEDAGE, data = south)
 abline(model, col = "red")
 
-plot(model, 
+plot(model,
      which = 1,
      main = "Residuals of Biscuit Sales Against Age")
 
@@ -181,8 +181,8 @@ responses <- numeric(trials)
 advert_test <- advert
 
 for (i in 1:trials) {
-        
-        advert_test$RAD <- sample(advert$RAD) 
+
+        advert_test$RAD <- sample(advert$RAD)
         responses[i] <- cor(advert_test$RAD, advert_test$NEWS)
 }
 
@@ -229,9 +229,9 @@ responses <- numeric(trials)
 advert_test <- advert
 
 for (i in 1:trials) {
-        
+
         advert_test$MHI <- sample(advert$MHI)
-        
+
         newmodel <- lm(MHI ~ MEDAGE, data = advert_test)
         responses[i] <- newmodel$coefficients[2]
 }
@@ -251,8 +251,3 @@ legend("topleft",
        lwd = 2)
 
 # Yes it is significantly different.
-
-
-
-
-
