@@ -14,21 +14,3 @@ This contains my notes and practices for the Quantitative Reasoning YCC1122 modu
 | 4    | Linear Regressions       | N, O, P, Q, R, S    |
 | 5    | Simulations and Sampling | T, U, V, W, X, Y    |
 | 6    | Statistical Significance | Z, ZA, ZB, ZC, ZD   |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-|      |                          |                     |
-
